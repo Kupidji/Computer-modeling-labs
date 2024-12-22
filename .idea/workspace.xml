@@ -5,9 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="468947b6-6351-4516-a8c8-8551c272f2db" name="Changes" comment="LeastCostMethod solution for TransportationProblem">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/drawable/task_table.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/app/App.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/app/ApplicationConfiguration.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/app/InputHandler.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/app/Language.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/app/Output.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/app/StringResource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/app/StringResourceKeys.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/Cell.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/ConfigurationOfSolution.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/Coordinates.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/DataForWay.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/MutableMatrix.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/OptimalSolutionResult.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/ReferencePlanSolutionResult.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/TransportationProblem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/WayOfSolution.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/method/LeastCostMethod.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/method/ModiMethod.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/method/ReferencePlanMethod.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/method/utils/CalculatePlanCost.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/method/utils/DegeneratePlanTransformer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/method/utils/OptimizationPlanMethod.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/domain/method/utils/TransportationProblemCloser.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/InputHandler.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Matrix.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/domain/Matrix.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Output.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/TransportationProblem.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/TransportationProblemSolutionMethod.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +50,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin File" />
+        <option value="Class" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -30,24 +60,49 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="SOFT" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Kupidji&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Kupidji/Computer-modeling-labs.git&quot;,
+    &quot;accountId&quot;: &quot;a75bf930-3acd-4664-8bf7-b3ade2606d5c&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2q185qeHTolqjA59jpnSfdSUNzy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build Computer-modeling-labs.executor": "Run",
+    "Kotlin.App.executor": "Run",
+    "Kotlin.Main.executor": "Run",
+    "Kotlin.MainKt (1).executor": "Run",
     "Kotlin.MainKt.executor": "Run",
+    "Kotlin.ModiMethod.executor": "Run",
+    "Kotlin.ModiMethodd.executor": "Run",
     "Kotlin.TestKt.executor": "Run",
+    "Kotlin.TestProgrammKt.executor": "Run",
+    "Kotlin.TestTesta.executor": "Run",
     "Kotlin.TransportationProblem.executor": "Run",
+    "Kotlin.modiMethod.executor": "Run",
+    "Kotlin.test.executor": "Run",
+    "Kotlin.testLeastCostMethod.executor": "Run",
+    "Kotlin.testMaxProfitMethod.executor": "Run",
+    "Kotlin.testTesta.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/kiril/IdeaProjects/Computer-modeling-labs/src/main/resources/drawable",
     "node.js.detected.package.eslint": "true",
@@ -55,26 +110,30 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Kotlin.MainKt">
-    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.kupidji.MainKt" />
-      <module name="Computer-modeling-labs.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.kupidji.TestKt" />
-      <module name="Computer-modeling-labs.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TransportationProblem" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.kupidji.TransportationProblem" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kiril\IdeaProjects\Computer-modeling-labs\src\main\resources\drawable" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kiril\IdeaProjects\Computer-modeling-labs\src\main\kotlin\domain" />
+      <recent name="C:\Users\kiril\IdeaProjects\Computer-modeling-labs\src\main\kotlin\app" />
+      <recent name="C:\Users\kiril\IdeaProjects\Computer-modeling-labs\src\main\kotlin" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="domain" />
+      <recent name="app" />
+      <recent name="domain.method.utils" />
+      <recent name="method.utils" />
+      <recent name="method" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="App" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.App" />
       <module name="Computer-modeling-labs.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -82,9 +141,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Kotlin.TestKt" />
-        <item itemvalue="Kotlin.TransportationProblem" />
+        <item itemvalue="Kotlin.App" />
       </list>
     </recent_temporary>
   </component>
@@ -106,7 +163,16 @@
       <updated>1733818541400</updated>
       <workItem from="1733818542448" duration="28141000" />
       <workItem from="1733973496332" duration="2739000" />
-      <workItem from="1734276640062" duration="10151000" />
+      <workItem from="1734276640062" duration="23013000" />
+      <workItem from="1734354346895" duration="9449000" />
+      <workItem from="1734364034807" duration="26025000" />
+      <workItem from="1734515007431" duration="47692000" />
+      <workItem from="1734599065529" duration="8801000" />
+      <workItem from="1734626176894" duration="4235000" />
+      <workItem from="1734672696061" duration="8436000" />
+      <workItem from="1734685908717" duration="36000" />
+      <workItem from="1734685957056" duration="61000" />
+      <workItem from="1734686031414" duration="59333000" />
     </task>
     <task id="LOCAL-00001" summary="LeastCostMethod solution for TransportationProblem">
       <option name="closed" value="true" />
@@ -116,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734286521582</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="LeastCostMethod solution for TransportationProblem">
+      <option name="closed" value="true" />
+      <created>1734287143269</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734287143269</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,5 +210,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="LeastCostMethod solution for TransportationProblem" />
     <option name="LAST_COMMIT_MESSAGE" value="LeastCostMethod solution for TransportationProblem" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.ConcurrentModificationException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
