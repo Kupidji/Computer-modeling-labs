@@ -1,9 +1,9 @@
-package app
+package lab5.app
 
-import domain.*
-import domain.DataForDefaultWay.createTransportationProblem
-import domain.method.LeastCostMethod
-import domain.method.ModiMethod
+import lab5.domain.*
+import lab5.domain.DataForDefaultWay.createTransportationProblem
+import lab5.domain.method.LeastCostMethod
+import lab5.domain.method.ModiMethod
 import java.util.*
 
 object App {
@@ -117,6 +117,7 @@ object App {
         }
 
         if (input.showHistoryOrExitInput()) {
+            output.printLine()
             output.printHistoryOfSolutionMsg()
             repeat(leastCostMethod.historyOfSolution.size) {
                 output.showTable(
@@ -132,7 +133,6 @@ object App {
                 output.printPotentialMatrixMsg()
                 output.showPotentialMatrix(matrix = modiMethod.historyOfPotentialMatrix[it])
                 output.showCycleStartLocationHistory(cell = modiMethod.historyOfCycleInitialLocation[it])
-                output.printHistoryOfCycleMsg()
                 output.showCycleHistory(listCoordinates = modiMethod.historyOfCyclePath[it])
                 output.showTable(
                     rowHeaders = this.suppliersTitle,

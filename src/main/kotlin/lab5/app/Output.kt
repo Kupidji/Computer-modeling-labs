@@ -1,10 +1,9 @@
-package app
+package lab5.app
 
-
-import domain.Cell
-import domain.Coordinates
-import domain.Matrix
-import domain.print
+import lab5.domain.Cell
+import lab5.domain.Coordinates
+import lab5.domain.Matrix
+import lab5.domain.print
 
 interface Output {
     fun <T> showInputTable(rowHeaders: List<String>, columnHeaders: List<String>,matrix: Matrix<T>)
@@ -49,7 +48,6 @@ class ConsoleOutput : Output {
     }
 
     override fun <T> showPotentialMatrix(matrix: Matrix<T>) {
-        println(StringResource.getStringResource(StringResourceKeys.potentialMatrix))
         for (list in matrix) {
             print("( ")
             for ((index, value) in list.withIndex()) {
@@ -83,7 +81,7 @@ class ConsoleOutput : Output {
     }
 
     override fun printHistoryOfSolutionMsg() {
-        println(StringResource.getStringResource(StringResourceKeys.historyOfSolution))
+        println(with(StringResource) { getStringResource(StringResourceKeys.historyOfSolution) })
     }
 
     override fun printLine() {

@@ -1,4 +1,4 @@
-package domain
+package lab5.domain
 
 class Coordinates(
     val x: Int,

@@ -1,4 +1,4 @@
-package domain
+package lab5.domain
 
 interface DataForWay {
     val tableSize: Pair<Int, Int>
@@ -12,12 +12,12 @@ interface DataForWay {
 }
 
 object DataForDefaultWay: DataForWay {
-    override val tableSize = Pair(4, 5) // Размер таблицы (4 строки и 5 столбцов)
+    override val tableSize = Pair(4, 5)
     override val suppliersTitle = mutableListOf("Мрамор", "Малахит", "Проволка", "Пластмасса")
     override val consumersTitle = mutableListOf("А", "Б", "В", "Г", "Д")
-    override val supplierValues = mutableListOf(17.0, 33.0, 15.0, 20.0) // Количество на складах
-    override val consumerValues = mutableListOf(10.0, 20.0, 15.0, 15.0, 20.0) // Требуемые количества
-    override val costsOfDelivery = matrixOf( // Матрица стоимости перевозок
+    override val supplierValues = mutableListOf(17.0, 33.0, 15.0, 20.0)
+    override val consumerValues = mutableListOf(10.0, 20.0, 15.0, 15.0, 20.0)
+    override val costsOfDelivery = matrixOf(
         tableSize.first,
         tableSize.second,
         90.0, 190.0, 140.0, 170.0, 90.0,
@@ -28,13 +28,11 @@ object DataForDefaultWay: DataForWay {
     override val plan: Matrix<Any>? = null
 
     private fun Matrix<Double>.transformTable(): List<List<Double>> {
-        // Находим максимальную прибыль в таблице
         val maxProfit = this.flatten().maxOrNull() ?: 0.0
 
-        // Преобразуем таблицу, вычисляя расходы на транспортировку
         return this.map { row ->
             row.map { profit ->
-                maxProfit - profit  // Разница между максимальной прибылью и текущей прибылью
+                maxProfit - profit
             }
         }
     }
@@ -52,12 +50,12 @@ object DataForDefaultWay: DataForWay {
 }
 
 object DataForTestWay: DataForWay {
-    override val tableSize = Pair(3, 4) // Размер таблицы (3 строки и 4 столбца)
+    override val tableSize = Pair(3, 4)
     override val suppliersTitle = mutableListOf("1", "2", "3")
     override val consumersTitle = mutableListOf("А", "Б", "В", "Г")
-    override val supplierValues = mutableListOf(160.0, 140.0, 170.0) // Остатки на складах
-    override val consumerValues = mutableListOf(120.0, 50.0, 190.0, 110.0) // Потребности
-    override val costsOfDelivery = matrixOf( // Матрица стоимости перевозок
+    override val supplierValues = mutableListOf(160.0, 140.0, 170.0)
+    override val consumerValues = mutableListOf(120.0, 50.0, 190.0, 110.0)
+    override val costsOfDelivery = matrixOf(
         tableSize.first,
         tableSize.second,
         7.0, 8.0, 1.0, 2.0,
@@ -79,12 +77,12 @@ object DataForTestWay: DataForWay {
 }
 
 object DataForSecondTestWay: DataForWay {
-    override val tableSize = Pair(4, 4) // Размер таблицы (4 строки и 4 столбца)
+    override val tableSize = Pair(4, 4)
     override val suppliersTitle = mutableListOf("1", "2", "3", "4")
     override val consumersTitle = mutableListOf("А", "Б", "В", "Г")
-    override val supplierValues = mutableListOf(35.0, 70.0, 65.0, 30.0) // Остатки на складах
-    override val consumerValues = mutableListOf(40.0, 85.0, 25.0, 50.0) // Потребности
-    override val costsOfDelivery = mutableMatrixOf( // Матрица стоимости перевозок
+    override val supplierValues = mutableListOf(35.0, 70.0, 65.0, 30.0)
+    override val consumerValues = mutableListOf(40.0, 85.0, 25.0, 50.0)
+    override val costsOfDelivery = mutableMatrixOf(
         tableSize.first,
         tableSize.second,
         9.0, 3.0, 6.0, 5.0,

@@ -1,4 +1,4 @@
-package domain
+package lab5.domain
 
 
 class ConfigurationOfSolution(
@@ -6,7 +6,3 @@ class ConfigurationOfSolution(
     val objectiveFunction: ObjectiveFunction
 )
 
-enum class ObjectiveFunction {
-    MAXIMUM_PROFIT,
-    MINIMUM_COST;
-}

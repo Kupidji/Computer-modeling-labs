@@ -1,8 +1,7 @@
-package domain.method.utils
+package lab5.domain.method
 
-import domain.ConfigurationOfSolution
-import domain.OptimalSolutionResult
-
+import lab5.domain.ConfigurationOfSolution
+import lab5.domain.OptimalSolutionResult
 
 interface OptimizationPlanMethod {
     val name: String

@@ -1,6 +1,6 @@
-package domain.method.utils
+package lab5.domain.method.utils
 
-import domain.TransportationProblem
+import lab5.domain.TransportationProblem
 
 
 interface DegeneratePlanTransformer {

@@ -1,11 +1,11 @@
-package domain.method
+package lab5.domain.method
 
 
-import app.StringResource
-import app.StringResourceKeys
-import domain.*
-import domain.method.utils.CalculatePlanCost
-import domain.method.utils.DegeneratePlanTransformer
+import lab5.app.StringResource
+import lab5.app.StringResourceKeys
+import lab5.domain.*
+import lab5.domain.method.utils.CalculatePlanCost
+import lab5.domain.method.utils.DegeneratePlanTransformer
 
 
 class LeastCostMethod(
@@ -54,13 +54,21 @@ class LeastCostMethod(
                 }
             }
 
-            _historyOfSolution.add(ReferencePlanSolutionResult(plan = resultPlan, result = calculatePlanCost(resultPlan, transportationProblem.costsOfDelivery)))
+            _historyOfSolution.add(
+                ReferencePlanSolutionResult(
+                    plan = resultPlan,
+                    result = calculatePlanCost(resultPlan, transportationProblem.costsOfDelivery)
+                )
+            )
         }
 
         transportationProblem.plan = resultPlan
         if (!checkPlanForDegenerate(transportationProblem)) makePlanDegenerate()
 
-        return ReferencePlanSolutionResult(plan = resultPlan, result = calculatePlanCost(resultPlan, transportationProblem.costsOfDelivery))
+        return ReferencePlanSolutionResult(
+            plan = resultPlan,
+            result = calculatePlanCost(resultPlan, transportationProblem.costsOfDelivery)
+        )
     }
 
     override fun <T> calculatePlanCost(plan: Matrix<T>, cost: Matrix<Double>): Double = super.calculatePlanCost(plan, cost)

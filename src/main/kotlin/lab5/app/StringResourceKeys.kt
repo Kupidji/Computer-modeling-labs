@@ -1,4 +1,4 @@
-package app
+package lab5.app
 
 enum class StringResourceKeys {
     choose,

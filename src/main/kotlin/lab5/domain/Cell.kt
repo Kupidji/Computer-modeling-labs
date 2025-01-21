@@ -1,4 +1,4 @@
-package domain
+package lab5.domain
 
 class Cell(
     val coordinates: Coordinates,

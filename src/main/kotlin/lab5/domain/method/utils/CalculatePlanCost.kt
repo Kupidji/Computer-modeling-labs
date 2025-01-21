@@ -1,6 +1,6 @@
-package domain.method.utils
+package lab5.domain.method.utils
 
-import domain.Matrix
+import lab5.domain.Matrix
 
 abstract class CalculatePlanCost {
     open fun <T> calculatePlanCost(plan: Matrix<T>, cost: Matrix<Double>): Double {

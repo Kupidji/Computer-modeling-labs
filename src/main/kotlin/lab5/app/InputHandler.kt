@@ -1,8 +1,8 @@
-package app
+package lab5.app
 
-import domain.Matrix
-import domain.ObjectiveFunction
-import domain.WayOfSolution
+import lab5.domain.Matrix
+import lab5.domain.ObjectiveFunction
+import lab5.domain.WayOfSolution
 import java.util.*
 
 interface InputHandler {

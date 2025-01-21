@@ -1,4 +1,4 @@
-package app
+package lab5.app
 
 object StringResource {
     var language: Language = Language.RU

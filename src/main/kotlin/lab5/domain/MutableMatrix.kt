@@ -1,4 +1,4 @@
-package domain
+package lab5.domain
 
 typealias MutableMatrix<T> = MutableList<MutableList<T>>
 
@@ -8,7 +8,7 @@ fun <T> mutableMatrixOf(columns: Int, rows: Int, vararg value: T): MutableMatrix
     val matrix = mutableListOf<MutableList<T>>()
     val list = value.toMutableList()
 
-    if (list.size != columns*rows) throw IllegalArgumentException("Размер матрицы должен быть ${columns*rows}, но введено лишь ${list.size} элементов")
+    if (list.size != columns*rows) throw IllegalArgumentException("Size of matrix must be ${columns*rows}, but got ${list.size} elements")
 
     var start = 0
     var end = rows

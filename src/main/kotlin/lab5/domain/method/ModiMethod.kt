@@ -1,10 +1,9 @@
-package domain.method
-import app.StringResource
-import app.StringResourceKeys
-import domain.*
-import domain.method.utils.CalculatePlanCost
-import domain.method.utils.OptimizationPlanMethod
+package lab5.domain.method
 
+import lab5.app.StringResource
+import lab5.app.StringResourceKeys
+import lab5.domain.*
+import lab5.domain.method.utils.CalculatePlanCost
 
 class ModiMethod(
     override val config: ConfigurationOfSolution,
@@ -133,7 +132,7 @@ class ModiMethod(
         for (y in 0 until supplierCount) {
             val tempList = mutableListOf<Double>()
             for (x in 0 until consumerCount) {
-                val Cij = costMatrix[y][x] - (uValues[y] + vValues[x]) // Изменён знак
+                val Cij = costMatrix[y][x] - (uValues[y] + vValues[x])
                 tempList.add(Cij)
             }
             result.add(tempList)
@@ -162,7 +161,7 @@ class ModiMethod(
     /**
      * @return true if value is negative, false otherwise.
      */
-    private fun isPlanOptimalForMaxProfit(value: Double) = (value <= 0.0) // Оптимально, если все Cij <= 0
+    private fun isPlanOptimalForMaxProfit(value: Double) = (value <= 0.0)
 
     private fun calculateCijForMinCost(uValues: List<Double>, vValues: List<Double>): Matrix<Double> {
         val result: MutableMatrix<Double> = mutableListOf()

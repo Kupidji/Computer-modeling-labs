@@ -1,4 +1,4 @@
-package domain
+package lab5.domain
 
 interface TransportationProblem {
     var suppliersCount: Int

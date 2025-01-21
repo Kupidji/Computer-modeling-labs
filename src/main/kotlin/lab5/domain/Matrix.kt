@@ -1,4 +1,4 @@
-package domain
+package lab5.domain
 
 /**
  * Matrix is a typealias of List<List<T>>
@@ -27,43 +27,36 @@ fun <T> matrixOf(columns: Int, rows: Int, vararg value: T): Matrix<T> {
  * Print table with headers
 * */
 fun <T> Matrix<T>.print(
-    rowHeaders: List<String>,    // Заголовки строк
-    columnHeaders: List<String>, // Заголовки столбцов
+    rowHeaders: List<String>,
+    columnHeaders: List<String>,
 ) {
     fun printRowSeparator(columnWidths: IntArray) {
         println("+" + columnWidths.joinToString("+") { "-".repeat(it + 2) } + "+")
     }
 
-    // Находим максимальную длину строки в каждой колонке (с учётом заголовков)
     val columnWidths = IntArray(columnHeaders.size + 1) { columnIndex ->
         if (columnIndex == 0) {
-            rowHeaders.maxOf { it.length } + 1 // Учитываем отступ для заголовков строк
+            rowHeaders.maxOf { it.length } + 1
         } else {
             maxOf(columnHeaders[columnIndex - 1].length, this.maxOf { it[columnIndex - 1].toString().length })
         }
     }
 
-    // Печать верхней рамки с заголовками столбцов
     printRowSeparator(columnWidths)
 
-    // Печать заголовков столбцов
     print("|")
-    print(" ".padEnd(columnWidths[0])) // Пустая ячейка перед заголовками столбцов
+    print(" ".padEnd(columnWidths[0]))
     for (j in columnHeaders.indices) {
         val paddedHeader = columnHeaders[j].padStart(columnWidths[j + 1])
         print(" $paddedHeader |")
     }
     println()
 
-    // Печать разделителя после заголовков столбцов
     printRowSeparator(columnWidths)
 
-    // Печать строк таблицы с выравниванием и заголовками строк
     for (i in this.indices) {
-        // Печать заголовка строки
         print("| ${rowHeaders[i].padEnd(columnWidths[0] - 1)} |")
 
-        // Печать данных строки
         for (j in this[i].indices) {
             val cell = this[i][j].toString()
             val paddedCell = cell.padStart(columnWidths[j + 1])
@@ -71,7 +64,6 @@ fun <T> Matrix<T>.print(
         }
         println()
 
-        // Печать разделителя после строки
         printRowSeparator(columnWidths)
     }
 }
