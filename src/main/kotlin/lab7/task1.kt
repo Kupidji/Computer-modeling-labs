@@ -1,4 +1,4 @@
-package lab6
+package lab7
 
 import kotlin.math.exp
 import kotlin.random.Random
