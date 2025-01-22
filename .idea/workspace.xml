@@ -4,35 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="468947b6-6351-4516-a8c8-8551c272f2db" name="Changes" comment="Implement Modi method, rewrite LeastCostMethod on my own solution">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/domain/ObjectiveFunction.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lab6/task1.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lab6/task2.kt" afterDir="false" />
+    <list default="true" id="468947b6-6351-4516-a8c8-8551c272f2db" name="Changes" comment="My bad, it was 7 laboratory work :D">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ikm/task3.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/app/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/app/App.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/app/ApplicationConfiguration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/app/ApplicationConfiguration.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/app/InputHandler.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/app/InputHandler.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/app/Language.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/app/Language.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/app/Output.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/app/Output.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/app/StringResource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/app/StringResource.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/app/StringResourceKeys.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/app/StringResourceKeys.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/Cell.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/domain/Cell.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/ConfigurationOfSolution.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/domain/ConfigurationOfSolution.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/Coordinates.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/domain/Coordinates.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/DataForWay.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/domain/DataForWay.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/Matrix.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/domain/Matrix.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/MutableMatrix.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/domain/MutableMatrix.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/OptimalSolutionResult.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/domain/OptimalSolutionResult.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/ReferencePlanSolutionResult.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/domain/ReferencePlanSolutionResult.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/TransportationProblem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/domain/TransportationProblem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/WayOfSolution.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/domain/WayOfSolution.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/method/LeastCostMethod.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/domain/method/LeastCostMethod.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/method/ModiMethod.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/domain/method/ModiMethod.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/method/ReferencePlanMethod.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/domain/method/ReferencePlanMethod.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/method/utils/CalculatePlanCost.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/domain/method/utils/CalculatePlanCost.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/method/utils/DegeneratePlanTransformer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/domain/method/utils/DegeneratePlanTransformer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/method/utils/OptimizationPlanMethod.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/domain/method/OptimizationPlanMethod.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/domain/method/utils/TransportationProblemCloser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lab5/domain/method/utils/TransportationProblemCloser.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +63,8 @@
     "Kotlin.ModiMethod.executor": "Run",
     "Kotlin.ModiMethodd.executor": "Run",
     "Kotlin.SolutionKt.executor": "Run",
+    "Kotlin.Task2Kt.executor": "Run",
+    "Kotlin.Task3Kt.executor": "Run",
     "Kotlin.TestKt.executor": "Run",
     "Kotlin.TestProgrammKt.executor": "Run",
     "Kotlin.TestTesta.executor": "Run",
@@ -130,7 +106,7 @@
       <recent name="method.utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Task2Kt">
+  <component name="RunManager" selected="Kotlin.Task3Kt">
     <configuration name="App (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lab5.app.App" />
       <module name="Computer-modeling-labs.main" />
@@ -146,14 +122,21 @@
       </method>
     </configuration>
     <configuration name="Task1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab6.Task1Kt" />
+      <option name="MAIN_CLASS_NAME" value="lab7.Task1Kt" />
       <module name="Computer-modeling-labs.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Task2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lab6.Task2Kt" />
+      <option name="MAIN_CLASS_NAME" value="lab7.Task2Kt" />
+      <module name="Computer-modeling-labs.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task3Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ikm.Task3Kt" />
       <module name="Computer-modeling-labs.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -161,9 +144,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Task3Kt" />
+        <item itemvalue="Kotlin.App (1)" />
         <item itemvalue="Kotlin.Task2Kt" />
         <item itemvalue="Kotlin.Task1Kt" />
-        <item itemvalue="Kotlin.App (1)" />
         <item itemvalue="Kotlin.App" />
       </list>
     </recent_temporary>
@@ -199,7 +183,8 @@
       <workItem from="1735101830491" duration="234000" />
       <workItem from="1735269973328" duration="2213000" />
       <workItem from="1736408343501" duration="26000" />
-      <workItem from="1737455899708" duration="2837000" />
+      <workItem from="1737455899708" duration="4155000" />
+      <workItem from="1737528218357" duration="4489000" />
     </task>
     <task id="LOCAL-00001" summary="LeastCostMethod solution for TransportationProblem">
       <option name="closed" value="true" />
@@ -225,7 +210,31 @@
       <option name="project" value="LOCAL" />
       <updated>1734885912505</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed some bugs, moved to lab5 package">
+      <option name="closed" value="true" />
+      <created>1737477475361</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1737477475361</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add 6 laboratory work solution">
+      <option name="closed" value="true" />
+      <created>1737477500597</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1737477500597</updated>
+    </task>
+    <task id="LOCAL-00006" summary="My bad, it was 7 laboratory work :D">
+      <option name="closed" value="true" />
+      <created>1737530558596</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1737530558596</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +254,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="LeastCostMethod solution for TransportationProblem" />
     <MESSAGE value="Implement Modi method, rewrite LeastCostMethod on my own solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement Modi method, rewrite LeastCostMethod on my own solution" />
+    <MESSAGE value="Fixed some bugs, moved to lab5 package" />
+    <MESSAGE value="Add 6 laboratory work solution" />
+    <MESSAGE value="My bad, it was 7 laboratory work :D" />
+    <option name="LAST_COMMIT_MESSAGE" value="My bad, it was 7 laboratory work :D" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
